@@ -1,12 +1,29 @@
 ## go-chat
-A simple golang chat server.
+
+A simple golang chat server and client.
 
 ## Usage
-Open a terminal session and run app.
 
-```go run main.go```
+Start a chat server:
 
-Open a separate terminal session and connect.
+```
+cd cmd/server
+go run main.go
+```
 
-```telnet localhost 8080```
+In a new tab/window, start a chat client:
 
+```
+cd cmd/client
+go run main.go
+```
+
+## Build for Windows
+
+```
+GOOS=windows GOARCH=amd64 go build
+```
+
+## To Do
+- Fix Windows new lines
+- UI - https://github.com/marcusolsson/tui-go
